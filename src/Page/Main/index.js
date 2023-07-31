@@ -3,8 +3,11 @@ import { useState } from 'react'
 
 function Main() {
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [form, setForm] = useState([{
+    email: '',
+    password: ''
+
+  }])
 
 
   return (
@@ -17,13 +20,14 @@ function Main() {
         <input
           type='text'
           placeholder='Type your e-mail'
-          value={email}
+          value={form.email}
         />
 
         <input
           type='password'
           placeholder='type your password'
-          value={password}
+          value={form.password}
+
         />
 
       </div>
