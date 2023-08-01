@@ -13,10 +13,16 @@ function Main() {
 
   }])
 
+  function clearForm() {
+    setError('');
+    setSuccess('');
+    setShowPassword(false)
 
-  function handleChangeForms(e) {
-    const value = e.target.value
-    setForm({ ...form, [e.target.id]: value })
+    setForm({
+      email: '',
+      password: ''
+    })
+
   }
 
   function handleSubmit(event) {
@@ -24,6 +30,11 @@ function Main() {
 
     setError('')
     setSuccess('')
+
+    if (!form.email) {
+      setError('Type in your email...')
+      return
+    }
 
     if (!form.password) {
       setError('Type in your password...')
@@ -34,7 +45,15 @@ function Main() {
       return
     }
 
+    clearForm()
     setSuccess('Your register was successful!')
+    console.log('submit')
+  }
+
+
+  function handleChangeForms(e) {
+    const value = e.target.value
+    setForm({ ...form, [e.target.id]: value })
   }
 
   return (
@@ -51,6 +70,7 @@ function Main() {
         <input
           type='text'
           placeholder='Type your e-mail'
+          id='email'
           value={form.email}
           onChange={(event) => handleChangeForms(event)}
         />
@@ -58,6 +78,7 @@ function Main() {
         <input
           type={showPassword ? 'text' : 'password'}
           placeholder='type your password'
+          id='password'
           value={form.password}
           onChange={(event) => handleChangeForms(event)}
         />
@@ -70,7 +91,7 @@ function Main() {
             onChange={() => setShowPassword(!showPassword)}
           />
 
-          {/* <label htmlFor='show-password'>Show password</label> */}
+          <label htmlFor='show-password'>Show password</label>
         </div>
 
         <button type='submit'>Log in</button>
