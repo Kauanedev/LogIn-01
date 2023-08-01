@@ -83,8 +83,7 @@ function Main() {
         <div className='password'>
 
           <img
-            // src={showPassword ? { openEye } : { closeEye }}
-            src={openEye}
+            src={showPassword ? openEye : closeEye}
             alt='show password'
             onClick={() => setShowPassword(!showPassword)}
           />
