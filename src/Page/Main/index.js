@@ -14,7 +14,7 @@ function Main() {
 
     <div className="container">
 
-      <div className='box'>
+      <form>
         <h1>login</h1>
 
         <input
@@ -30,7 +30,9 @@ function Main() {
 
         />
 
-      </div>
+        <button type='submit'>Log in</button>
+
+      </form>
 
 
 
