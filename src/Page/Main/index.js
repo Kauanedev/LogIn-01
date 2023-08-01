@@ -50,7 +50,7 @@ function Main() {
     }
 
     clearForm()
-    setSuccess(`Welcome, ${form.email}`)
+    setSuccess(`Welcome, ${form.email}!`)
     console.log('submit')
   }
 
