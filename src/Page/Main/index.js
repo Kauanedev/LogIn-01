@@ -20,7 +20,21 @@ function Main() {
   }
 
   function handleSubmit(event) {
+    event.preventDefault()
 
+    setError('')
+    setSuccess('')
+
+    if (!form.password) {
+      setError('Type in your password...')
+      return
+    }
+    if (form.password.length < 8) {
+      setError('Your password should contain at least 8 characters ')
+      return
+    }
+
+    setSuccess('Your register was successful!')
   }
 
   return (
