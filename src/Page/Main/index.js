@@ -1,5 +1,9 @@
 import './style.css';
 import { useState } from 'react'
+import openEye from '../../Assests/open-eye.svg'
+import closeEye from '../../Assests/close-eye.svg'
+
+
 
 function Main() {
 
@@ -46,7 +50,7 @@ function Main() {
     }
 
     clearForm()
-    setSuccess('Your register was successful!')
+    setSuccess(`Welcome, ${form.email}`)
     console.log('submit')
   }
 
@@ -75,23 +79,24 @@ function Main() {
           onChange={(event) => handleChangeForms(event)}
         />
 
-        <input
-          type={showPassword ? 'text' : 'password'}
-          placeholder='type your password'
-          id='password'
-          value={form.password}
-          onChange={(event) => handleChangeForms(event)}
-        />
 
-        <div>
-          <input
-            type='checkbox'
-            name='show password'
-            checked={showPassword}
-            onChange={() => setShowPassword(!showPassword)}
+        <div className='password'>
+
+          <img
+            // src={showPassword ? { openEye } : { closeEye }}
+            src={openEye}
+            alt='show password'
+            onClick={() => setShowPassword(!showPassword)}
           />
 
-          <label htmlFor='show-password'>Show password</label>
+          <input
+            type={showPassword ? 'text' : 'password'}
+            placeholder='type your password'
+            id='password'
+            value={form.password}
+            onChange={(event) => handleChangeForms(event)}
+          />
+
         </div>
 
         <button type='submit'>Log in</button>
