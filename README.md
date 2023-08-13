@@ -1,5 +1,66 @@
-# Getting Started with Create React App
+![](https://i.imgur.com/xG74tOh.png)
 
+# Project React - Login
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Kauanedev/LogIn-01?color=%2304D361">
+  
+  <a href="https://github.com/Kauanedev/LogIn-01/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Kauanedev/LogIn-01">
+  </a>
+
+   <a href="https://Kauanedev/">
+    <img alt="Feito por Kauane Santos" src="https://img.shields.io/badge/feito-por%20Kauanedev-D818A5">
+   </a>
+</p>
+
+<p align="center">
+<img src='./src/Assests/logIn-01-first.jpeg' alt='first image'>
+<p/>
+
+<h4 align="center"> 
+🔐Log in Project 💻 
+</h4>
+
+<p align="center">
+	<img alt="Status Concluído" src="https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen">
+</p>
+
+<p align="center">
+ <a href="#-About-the-project">About</a> •
+ <a href="#-Functionalities">Functionalities</a> •
+ <a href="#-Tecnologies">Tecnologies</a> 
+</p>
+
+## 💻 About the project
+<p id='about'>
+🔐logIn project It´s a project developed in one of the classes at cubos academy
+</p>
+
+
+## ⚙️ Functionalities
+<h1 id=functionalities></h1>
+
+ 📌Fill out the form:
+<p align="center">
+<img src='./src/Assests/LogIn-01-filled.jpeg' alt='first image'>
+<p/>
+ 📌If you forget to fill out anything, it will inform you:
+  <p align="center">
+<img src='./src/Assests/LogIn-01-passwordError.jpeg' alt='first image'>
+<p/>
+📌When everything is in order, it will welcome you and clear out the form: 
+  <p align="center">
+<img src='./src/Assests/LogIn-01-welcome.jpeg' alt='first image'>
+<p/>
+
+
+
+
+
+
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
